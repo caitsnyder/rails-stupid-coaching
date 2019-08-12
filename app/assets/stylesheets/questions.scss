@@ -1,0 +1,115 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Defining a variable
+@import url('https://fonts.googleapis.com/css?family=Lato|Red+Hat+Display:400,500,700&display=swap');
+
+$gray: rgba(243, 247, 247,0.4);
+$teal: rgb(0,102,102);
+$teal_slight: rgba(0,102,102, 0.8);
+$teal_hover: rgba(0,102,102, 0.4);
+$teal_field: rgba(0,102,102, 0.05);
+$lightGray: #709F9F;
+
+body {
+  // background: $teal; // Using this variable
+  background-image: linear-gradient(90deg, $teal, $teal_slight);
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+h2 {
+  color: $teal;
+  font-size: 20px;
+}
+
+.container {
+  background: white;
+  width:400px;
+  margin: 50px auto;
+  padding: 10px 30px 30px 30px;
+  color: $teal;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  background: white;
+  width: 400px;
+  margin: 50px auto;
+  padding: 15px 15px 15px 30px;
+  color: $teal;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px 0 rgba(200, 200, 200, 0.2), 0 6px 20px 0 rgba(200, 200, 200, 0.19);
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.card {
+  background: white;
+  border-left: $gray 2px solid;
+  box-shadow: 0 2px 1px 0px rgba(200, 200, 200, 0.2) ;
+  // , 1px 1px 1px 0px rgba(200, 200, 200, 0.19);
+  width: 100%;
+  margin: 25px 0 25px 7px;
+  padding: 20px;
+}
+
+p {
+  color: $teal;
+}
+
+.italicized {
+  font-style: italic;
+}
+
+.green_button {
+  color: $teal;
+  background-color: white;
+  border: $teal, solid, 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0 10px 0;
+  background-color: white;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: $teal;
+  font-size: 24px;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: $teal_hover;
+  color: $teal;
+}
+
+a {
+  text-decoration: none;
+  padding-top: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #fff2ac;
+  color: white;
+  background-image: linear-gradient(180deg, white 0%, $teal 10%, $teal 90%, white 100%);
+}

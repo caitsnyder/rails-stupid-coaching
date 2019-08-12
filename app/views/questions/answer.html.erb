@@ -1,0 +1,27 @@
+
+<div class="card-container">
+  <row>
+    <h2>Results</h2>
+    <div class="card">
+      <h2>Question:</h2>
+      <p><%= params[:question] %></p>
+
+    </div>
+    <%
+      if params[:question] == "I am going to work"
+        answer = "Great!"
+      elsif params[:question][-1] == "?"
+        answer = "Silly question, get dressed and go to work!"
+      else
+        answer = "I don't care, get dressed and go to work!"
+      end
+    %>
+    <div class="card">
+      <h2>Answer:</h2>
+      <p class="italicized"><%= answer %></p>
+    </div>
+    <div>
+      <p><%= link_to "Ask a new question", "ask", class: "green_button" %></p>
+    </div>
+  </row>
+</div>
